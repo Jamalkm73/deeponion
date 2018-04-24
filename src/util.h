@@ -35,6 +35,8 @@
 #include <stdint.h>
 #include <inttypes.h>
 
+namespace fs = boost::filesystem;
+
 typedef long long  int64;
 typedef unsigned long long  uint64;
 static const int64_t COIN = 100000000;
@@ -203,6 +205,7 @@ std::string EncodeBase32(const std::string& str);
 void ParseParameters(int argc, const char*const argv[]);
 bool WildcardMatch(const char* psz, const char* mask);
 bool WildcardMatch(const std::string& str, const std::string& mask);
+bool TryCreateDirectories(const fs::path& p);
 void FileCommit(FILE *fileout);
 bool RenameOver(boost::filesystem::path src, boost::filesystem::path dest);
 boost::filesystem::path GetDefaultDataDir();
@@ -230,6 +233,7 @@ std::string FormatSubVersion(const std::string& name, int nClientVersion, const 
 void AddTimeData(const CNetAddr& ip, int64_t nTime);
 void runCommand(std::string strCommand);
 const std::string currentDateTime();
+std::string bytesReadable(uint64_t nBytes);
 
 
 

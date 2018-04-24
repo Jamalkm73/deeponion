@@ -50,12 +50,17 @@
         <file alias="mixer_process">res/icons/mixer_process.png</file>
         <file alias="mixer_on">res/icons/mixer_on.png</file>        
         <file alias="deepsend">res/icons/deepsend.png</file>
+        <file alias="fontbigger">res/icons/fontbigger.png</file>
+        <file alias="fontsmaller">res/icons/fontsmaller.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about_new">res/images/about.png</file>
         <file alias="splash">res/images/splash.png</file>
         <file alias="splash_testnet">res/images/splash_testnet.png</file>
         <file alias="wallet_logo">res/images/wallet.png</file>
+    </qresource>
+     <qresource prefix="/css">
+        <file alias="default">res/css/default.css</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>
@@ -64,5 +69,6 @@
         <file alias="en">locale/bitcoin_en.qm</file>
         <file alias="fr">locale/bitcoin_fr.qm</file>
         <file alias="ru">locale/bitcoin_ru.qm</file>
+        <file alias="es">locale/bitcoin_es.qm</file>
     </qresource>
 </RCC>
